@@ -1,0 +1,28 @@
+<div class="container">
+{{textarea class="form-group" value=model.content }}
+
+
+
+<button class="button btn-primary"{{action "save" model}}> Save </button>
+  <button {{action "clear" model}}> effacer </button>
+
+
+  {{#if model.info }}
+    <div class="alert alert-success">
+    {{model.info}}
+    </div>
+
+  {{/if}}
+
+
+
+  {{#if model.style  }}
+    <div class="{{model.style}}">
+
+    </div>
+
+  {{/if}}
+
+
+
+</div>
